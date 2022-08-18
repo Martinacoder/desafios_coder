@@ -52,6 +52,19 @@
 .mainDiv h2{
     color: rgb(249, 141, 0);
     margin-bottom: 15px;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+from {
+    margin-left: 100%;
+    width: 300%
+}
+
+to {
+    margin-left: 0%;
+    width: 100%;
+}
 }
 .mainDiv p {
     margin: 50px 150px;
@@ -187,6 +200,12 @@ form label {
     padding: 10px;
     margin-top: 15px;
     width: 80px;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+.submit:hover{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 @media only screen and (max-width: 768px) {
