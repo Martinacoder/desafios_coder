@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.logoHeader {
+    width: 110px;
+    height: 110px;
+}
+.header{
+    padding: 12px;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, white, rgb(251, 210, 157));
+}
+.navBar{
+    float: right;
+}
+.navBar li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.navBar a:hover{
+    color:blueviolet
+}
+.searchIcon{
+    width: 20px;
+    height: 20px;
+}
+.linksToPages{
+    text-decoration: none;
+    color: #037920;
+}
+.main {
+    min-height: calc(100vh - 100px - 300px);
+}
+.mainDiv {
+    text-align: center;
+    background-color: rgb(235, 252, 234);
+    padding-bottom: 15px;
+}
+.mainDiv h1{
+    font-size: 60px;
+    font-weight: 900;
+    color: #037920;
+    padding-top: 18px;
+}
+.mainDiv h2{
+    color: rgb(249, 141, 0);
+    margin-bottom: 15px;
+}
+.mainDiv p {
+    margin: 50px 150px;
+    color: rgb(249, 141, 0);
+}
+.pictures {
+    background-color: rgb(251, 210, 157);
+    padding: 15px;
+}
+.container {
+    width: 100%;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 600px);
+    grid-gap: 15px;
+}
+.item {
+    box-shadow: 3px 3px rgb(249, 141, 0);
+}
+.item:hover {
+    box-shadow: 4px 4px black;
+}
+.item1 {
+    background-image: url(../imgs/honey-baked-ham.webp);
+    background-position: center;
+    background-size: cover;
+    grid-column: 1/3;
+}
+.item2 {
+    background-image: url(../imgs/paella.webp);
+    background-position: center;
+    background-size: cover;
+}
+.item3 {
+    background-image: url(../imgs/korean-corn-dogs.webp);
+    background-position: center;
+    background-size: cover;
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+.item4 {
+    background-image: url(../imgs/honey-garlic-chicken.webp);
+    background-position: center;
+    background-size: cover;
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+.item5 {
+    background-image: url(../imgs/cilantro-lime-rice.webp);
+    background-position: center;
+    background-size: cover;
+}
+.item6 {
+    background-image: url(../imgs/shawarma.webp);
+    background-position: center;
+    background-size: cover;
+}
+.item7 {
+    background-image: url(../imgs/tsos-chicken.webp);
+    background-position: center;
+    background-size: cover;
+}
+.item8 {
+    background-image: url(../imgs/sweet-and-sour-pork.webp);
+    background-position: center;
+    background-size: cover;
+}
+.item9 {
+    background-image: url(../imgs/fried-shrimpo.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+footer{
+    padding: 45px 0px;
+    background-color: rgb(235, 252, 234);
+}
+.socialMedia{
+    display: flex;
+    justify-content: space-around;
+}
+.iconsSM{
+    text-decoration: none;
+    color: rgb(249, 141, 0);
+    font-size: 25px;
+}
+.footerText{
+    color: rgb(249, 141, 0);
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.footerText p{
+    padding-left: 20px;
+}
+.containerRecipies {
+    display: flex;
+    justify-content: space-evenly;
+}
+.containerRecipies iframe {
+    padding: 10px;
+    border-radius: 20px;
+    width: 560px;
+    height: 315px;
+}
+
+.formDiv {
+    background-color: rgb(251, 210, 157);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formSections{
+    padding: 15px 0px;
+}
+.formSectionsColumn {
+    display: flex;
+    flex-direction: column;
+}
+form h2 {
+    color: #037920;
+}
+form label {
+    color: #8338EC;
+}
+.submit {
+    color: #8338EC;
+    background-color: rgb(235, 252, 234);
+    border-radius: 10px; 
+    border: 1px solid #037920;
+    padding: 10px;
+    margin-top: 15px;
+    width: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+    .navBar li {
+        display: block;
+    }
+    .mainDiv {
+        padding: 15px;
+    }
+    .mainDiv p {
+        margin: 15px 25px;
+    }
+    .container {
+        display: block;
+    }
+    .item {
+        width: 100%;
+        height: 150px;
+        margin: 25px 0px;
+    }
+    .containerRecipies {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .containerRecipies iframe {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1366px) {
+    .mainDiv {
+        padding: 15px;
+    }
+    .mainDiv p {
+        margin: 15px 25px;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+        grid-gap: 15px;
+    }
+    .item {
+        width: 100%;
+        height: 150px;
+        margin: 25px 0px;
+    }
+    .item1 {
+        background-image: url(../imgs/honey-baked-ham.webp);
+        background-position: center;
+        background-size: cover;
+        grid-column: 1/2;
+    }
+    .item3 {
+        background-image: url(../imgs/korean-corn-dogs.webp);
+        background-position: center;
+        background-size: cover;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .item4 {
+        background-image: url(../imgs/honey-garlic-chicken.webp);
+        background-position: center;
+        background-size: cover;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .containerRecipies {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .containerRecipies iframe {
+        width: 80%;
+        height: auto;
+    }
+}
