@@ -74,7 +74,7 @@ to {
     background-color: rgb(251, 210, 157);
     padding: 15px;
 }
-.container {
+.containerImgsHome {
     width: 100%;
     padding: 15px;
     display: grid;
@@ -161,16 +161,6 @@ footer{
 .footerText p{
     padding-left: 20px;
 }
-.containerRecipies {
-    display: flex;
-    justify-content: space-evenly;
-}
-.containerRecipies iframe {
-    padding: 10px;
-    border-radius: 20px;
-    width: 560px;
-    height: 315px;
-}
 
 .formDiv {
     background-color: rgb(251, 210, 157);
@@ -218,7 +208,7 @@ form label {
     .mainDiv p {
         margin: 15px 25px;
     }
-    .container {
+    .containerImgsHome {
         display: block;
     }
     .item {
@@ -231,10 +221,6 @@ form label {
         flex-direction: column;
         align-items: center;
     }
-    .containerRecipies iframe {
-        width: 80%;
-        height: auto;
-    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1366px) {
@@ -244,7 +230,7 @@ form label {
     .mainDiv p {
         margin: 15px 25px;
     }
-    .container {
+    .containerImgsHome {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
@@ -280,8 +266,18 @@ form label {
         flex-direction: column;
         align-items: center;
     }
-    .containerRecipies iframe {
-        width: 80%;
-        height: auto;
-    }
+}
+article {
+    background-image: linear-gradient(to right, white, rgb(251, 210, 157));
+    border: 2px solid #037920;
+    padding: 15px;
+    color: rgb(249, 141, 0);
+}
+.dropdown {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
 }
